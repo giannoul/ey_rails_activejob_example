@@ -11,3 +11,7 @@ run "find #{config.release_path}/config/ -name '*_credentials.yml.enc' -delete"
 
 #check the results of the deletion of the unsused %environment%_credentials.yml.enc files
 run "ls -lhart #{config.release_path}/config/ | grep credentials.yml.enc"
+
+#source the cloud.env file
+run "source #{config.shared_path}/config/env.cloud"
+run "echo $UNICORN_VERSION"
