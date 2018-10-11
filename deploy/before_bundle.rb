@@ -14,4 +14,5 @@ run "ls -lhart #{config.release_path}/config/ | grep credentials.yml.enc"
 
 #source the cloud.env file
 run "source #{config.shared_path}/config/env.cloud"
-run "echo $UNICORN_VERSION"
+run "source #{config.shared_path}/config/env.cloud && echo $UNICORN_VERSION"
+run "bundle config"
