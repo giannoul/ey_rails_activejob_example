@@ -58,4 +58,4 @@ gem 'sidekiq'
 # Resque
 gem 'resque'
 
-gem 'unicorn','#{ENV["UNICORN_VERSION"]}'
+gem 'unicorn',ENV["UNICORN_VERSION"]
