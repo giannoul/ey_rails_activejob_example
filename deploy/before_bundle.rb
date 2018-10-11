@@ -14,5 +14,8 @@ run "ls -lhart #{config.release_path}/config/ | grep credentials.yml.enc"
 
 #source the cloud.env file
 run "source #{config.shared_path}/config/env.cloud"
-run "source #{config.shared_path}/config/env.cloud && echo $UNICORN_VERSION"
+run "echo $GIT_AUTH_KEY"
+run "source #{config.shared_path}/config/env.cloud && echo $GIT_AUTH_KEY"
+run "bundle config"
+run "source #{config.shared_path}/config/env.cloud && bundle config github.com $GIT_AUTH_KEY"
 run "bundle config"
