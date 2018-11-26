@@ -44,7 +44,7 @@ defaults:
   #
   precompile_assets: true
   precompile_unchanged_assets: true
-  precompile_assets_command: "source /data/ilias_rails_activejob/shared/env.cloud rake assets:precompile"
+  precompile_assets_command: "source /data/ilias_rails_activejob/shared/config/env.cloud && rake assets:precompile"
   experimental_sync_assets: true
   # Override the assets:precompile rake task. This option will be used instead
   # of assets:precompile in the `rake assets:precompile` command.
