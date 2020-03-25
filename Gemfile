@@ -53,9 +53,11 @@ gem 'delayed_job', '~> 4.1.2'
 gem 'delayed_job_active_record', '~> 4.1.1'
 
 # Sidekiq
-gem 'sidekiq'
+gem 'sidekiq', '>=6'
+gem 'loofah', '=2.4.0'
 
 # Resque
 gem 'resque'
 
 gem 'unicorn'
+gem 'json', '>= 1.8'
