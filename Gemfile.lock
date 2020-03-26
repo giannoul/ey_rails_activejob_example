@@ -89,6 +89,7 @@ GEM
     multi_json (1.14.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    mysql2 (0.5.3)
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
@@ -207,6 +208,7 @@ DEPENDENCIES
   json (>= 1.8)
   listen (~> 3.0.5)
   loofah (= 2.4.0)
+  mysql2
   pg
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
